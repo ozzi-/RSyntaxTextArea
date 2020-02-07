@@ -130,10 +130,10 @@ public class RSyntaxTextAreaUI extends RTextAreaUI {
 	protected InputMap getRTextAreaInputMap() {
 		InputMap map = new InputMapUIResource();
 		InputMap shared = (InputMap)UIManager.get(SHARED_INPUT_MAP_NAME);
-		if (shared==null) {
+		//if (shared==null) {
 			shared = new RSyntaxTextAreaDefaultInputMap();
 			UIManager.put(SHARED_INPUT_MAP_NAME, shared);
-		}
+		//}
 		//KeyStroke[] keys = shared.allKeys();
 		//for (int i=0; i<keys.length; i++)
 		//	System.err.println(keys[i] + " -> " + shared.get(keys[i]));
